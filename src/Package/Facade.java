@@ -1,17 +1,15 @@
 package Package;
 
+import java.util.ArrayList;
+
 public class Facade {
-	private ArrayList<Ruta> rutas;
-    private ArrayList<Reserva> reservas ;
-    private ArrayList<ComponentePagos> pagos;
+	
     private Usuarios usuarios; 
     private ArrayList<Acceso> ingresos;
     
     public Facade(){
         usuarios = new Usuarios();
-        reservas = new ArrayList<Reserva>();
-        pagos = new ArrayList<ComponentePagos>();
-        rutas = new ArrayList<Ruta>();
+       
         ingresos = new ArrayList<Acceso>();
         
     }
