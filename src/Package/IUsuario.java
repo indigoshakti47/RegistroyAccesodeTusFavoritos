@@ -2,9 +2,9 @@ package Package;
 
 public interface IUsuario {
 	
-	public String adicionar(String nombre, String correo, String contraseña) throws Exception;
+	public String adicionar(String nombre, String correo, String contrasena) throws Exception ;
 
-    public String modificar(String correo, String nombre, String contraseña) throws Exception;
+    public String modificar(String correo, String nombre, String contrasena) throws Exception;
 
     public String consultar() throws Exception;
     
@@ -16,8 +16,8 @@ public interface IUsuario {
 
    public void setCorreo(String correo);
 
-   public String getContraseña();
+   public String getContrasena();
 
-   public void setContraseña(String contraseña);
+   public void setContrasena(String contrasena);
 
 }

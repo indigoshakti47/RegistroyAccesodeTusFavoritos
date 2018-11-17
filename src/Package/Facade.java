@@ -14,7 +14,7 @@ public class Facade {
         
     }
     
-    public Usuario RegistrarUsuario(String tipo, String nombre, String correo, String contraseña) throws Exception{
+    public Usuario RegistrarUsuario(String tipo, String nombre, String correo, String contrasena) throws Exception{
         Usuario u;
         if(tipo.equals("conductor")){
             u= new Conductor();
@@ -25,7 +25,7 @@ public class Facade {
         }else{
             throw new Exception ("Tipo de usuario no especificado");
         }
-        String r= u.adicionar(nombre, correo, contraseña);
+        String r= u.adicionar(nombre, correo, contrasena);
         usuarios.putUsuario(u);
         return u;
     }
@@ -35,11 +35,11 @@ public class Facade {
         ProxyMenu.UnicaInstancia().eliminar(correo);
     }
     
-    public IUsuario acceder(String correo, String contraseña, long id) throws Exception{
+    public IUsuario acceder(String correo, String contrasena, long id) throws Exception{
         IUsuario user= usuarios.getUsuario(correo);
         if(user==null) throw new Exception("este usuario no esta registrado");
         
-        if(user.getContraseña().equals(contraseña)){
+        if(user.getContrasena().equals(contrasena)){
             ingresos.add(new Acceso(correo, id));
             return user;
         }else{

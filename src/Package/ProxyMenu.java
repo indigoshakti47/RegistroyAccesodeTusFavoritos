@@ -23,9 +23,9 @@ public class ProxyMenu implements Imenu{
     }
     
     @Override
-    public ArrayList<String> acceder(String correo, String contraseña) throws Exception {
+    public ArrayList<String> acceder(String correo, String contrasena) throws Exception {
         long id = new Random().nextLong();
-        IUsuario usuario = facade.acceder(correo, contraseña, id);
+        IUsuario usuario = facade.acceder(correo, contrasena, id);
         String menu, tipoUsuario;
         
         
@@ -69,9 +69,9 @@ public class ProxyMenu implements Imenu{
     
 
     @Override
-    public void registrarUsuario(String tipoUsuario, String nombre, String correo, String contraseña) throws Exception {
+    public void registrarUsuario(String tipoUsuario, String nombre, String correo, String contrasena) throws Exception {
         if(usuarios.get(correo)== null){
-            usuarios.put(correo, facade.RegistrarUsuario(tipoUsuario, nombre, correo, contraseña));
+            usuarios.put(correo, facade.RegistrarUsuario(tipoUsuario, nombre, correo, contrasena));
         }else{
             throw new Exception ("este usuario ya se encuentra registrado");
         }

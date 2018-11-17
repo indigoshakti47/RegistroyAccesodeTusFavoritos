@@ -4,7 +4,7 @@ public class Administrador {
 	
 	private String nombre;
     private String correo;
-    private String contraseña;
+    private String contrasena;
 
   public void crear() {
     System.out.println("Crear adaptado...");
@@ -38,12 +38,12 @@ public class Administrador {
         this.correo = correo;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getContrasena() {
+        return contrasena;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
     }
 
 }

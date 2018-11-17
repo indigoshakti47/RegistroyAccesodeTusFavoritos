@@ -1,7 +1,6 @@
 package Package;
 
-public class AdministradorAdapter extends Usuario {
-	
+public class AdministradorAdapter extends Usuario{
 	private Administrador admin;
 
 	  public AdministradorAdapter() {
@@ -10,11 +9,11 @@ public class AdministradorAdapter extends Usuario {
 	  }
 
 	  @Override
-	  public String adicionar(String nombre, String correo, String contraseña) throws Exception {
-	      if(admin.getNombre()==null && admin.getCorreo()==null && admin.getContraseña()==null){
+	  public String adicionar(String nombre, String correo, String contrasena) throws Exception {
+	      if(admin.getNombre()==null && admin.getCorreo()==null && admin.getContrasena()==null){
 	      admin.setNombre(nombre);
 	      admin.setCorreo(correo);
-	      admin.setContraseña(contraseña);
+	      admin.setContrasena(contrasena);
 	      }else{
 	          throw new Exception("Este usuario ya tiene datos registrados");
 	      }
@@ -24,12 +23,12 @@ public class AdministradorAdapter extends Usuario {
 	  }
 
 	  @Override
-	  public String modificar(String correo, String nombre, String contraseña) throws Exception{
+	  public String modificar(String correo, String nombre, String contrasena) throws Exception{
 	      
-	      if(!(admin.getNombre()==null && admin.getCorreo()==null && admin.getContraseña()==null)) {
+	      if(!(admin.getNombre()==null && admin.getCorreo()==null && admin.getContrasena()==null)) {
 	      admin.setNombre(nombre);
 	      admin.setCorreo(correo);
-	      admin.setContraseña(contraseña);
+	      admin.setContrasena(contrasena);
 	      }else{
 	          throw new Exception("Este usuario no tiene datos registrados aun, deberias crearlo");
 	      }
@@ -40,7 +39,7 @@ public class AdministradorAdapter extends Usuario {
 
 	  @Override
 	  public String consultar()  throws Exception {
-	      if(admin.getNombre()==null && admin.getCorreo()==null && admin.getContraseña()==null){
+	      if(admin.getNombre()==null && admin.getCorreo()==null && admin.getContrasena()==null){
 	          throw new Exception ("no hay datos guardados en este Usuario");
 	      }
 	      

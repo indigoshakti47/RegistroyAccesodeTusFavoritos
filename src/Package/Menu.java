@@ -10,7 +10,7 @@ public class Menu {
 		// TODO Auto-generated method stub
 		
 		 int pasajeros, op = -1;
-	        String nombre, correo, contraseña, tipo, salida, hora, conductor, pasajero;
+	        String nombre, correo, contrasena, tipo, salida, hora, conductor, pasajero;
 	        long valor; 
 	        ArrayList<String> datos;
 	        do {
@@ -25,7 +25,7 @@ public class Menu {
 	                    case 1:
 	                        nombre= JOptionPane.showInputDialog("¿Cual es su nombre?");
 	                        correo= JOptionPane.showInputDialog("indique su correo electronico");
-	                        contraseña = JOptionPane.showInputDialog("escriba una constraseña");
+	                        contrasena = JOptionPane.showInputDialog("escriba una constraseña");
 	                        int t= Integer.parseInt(JOptionPane.showInputDialog("1. administrador\n2.pasajero\n3.conductor"));
 	                        switch(t){
 	                            case 1: tipo = "administrador"; break;
@@ -33,12 +33,12 @@ public class Menu {
 	                            case 3: tipo = "conductor"; break;
 	                            default: tipo = null; break;
 	                        }
-	                        ProxyMenu.UnicaInstancia().registrarUsuario(tipo, nombre, correo, contraseña);
+	                        ProxyMenu.UnicaInstancia().registrarUsuario(tipo, nombre, correo, contrasena);
 	                        break;
 	                    case 2:
 	                        correo= JOptionPane.showInputDialog("ingrese su correo");
-	                        contraseña = JOptionPane.showInputDialog("ingrese su contraseña");
-	                        datos= ProxyMenu.UnicaInstancia().acceder(correo, contraseña);
+	                        contrasena = JOptionPane.showInputDialog("ingrese su contraseña");
+	                        datos= ProxyMenu.UnicaInstancia().acceder(correo, contrasena);
 	                        Menu.mostrarMenu(datos);
 	                        break;
 	                    case 0:

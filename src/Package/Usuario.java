@@ -4,17 +4,23 @@ public abstract class Usuario implements IUsuario {
 	
 	  protected String nombre;
 	  protected String correo;
-	  protected String contraseña;
+	  protected String contrasena;
 
-	  abstract public String adicionar(String nombre, String correo, String contraseña) throws Exception;
+	  abstract public String adicionar(String nombre, String correo, String contrasena) throws Exception;
 
-	  abstract public String modificar(String correo, String nombre, String contraseña) throws Exception;
+	  abstract public String modificar(String correo, String nombre, String contrasena) throws Exception;
 
 	  abstract public String consultar() throws Exception;
+	  
+	  
 
 
 
-	  public String getNombre() {
+	  public Usuario() {
+		super();
+	}
+
+	public String getNombre() {
 	    return nombre;
 	  }
 
@@ -30,12 +36,12 @@ public abstract class Usuario implements IUsuario {
 	    this.correo = correo;
 	  }
 
-	  public String getContraseña() {
-	    return contraseña;
+	  public String getContrasena() {
+	    return contrasena;
 	  }
 
-	  public void setContraseña(String contraseña) {
-	    this.contraseña = contraseña;
+	  public void setContrasena(String contrasena) {
+	    this.contrasena = contrasena;
 	  }
 
 }
