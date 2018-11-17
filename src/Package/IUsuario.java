@@ -1,5 +1,23 @@
 package Package;
 
-public class IUsuario {
+public interface IUsuario {
+	
+	public String adicionar(String nombre, String correo, String contraseña) throws Exception;
+
+    public String modificar(String correo, String nombre, String contraseña) throws Exception;
+
+    public String consultar() throws Exception;
+    
+    public String getNombre() ;
+
+   public void setNombre(String nombre);
+
+   public String getCorreo();
+
+   public void setCorreo(String correo);
+
+   public String getContraseña();
+
+   public void setContraseña(String contraseña);
 
 }
