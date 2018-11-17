@@ -56,6 +56,60 @@ public class Menu {
 	        while (op !=0);
 	    }
 
+	 private static void mostrarMenu(ArrayList<String> mensaje) throws Exception{
+	       String hora,ruta, pasajero, bruta, banco, tipocuenta, cuenta,conductor, tarjeta, codigo,salida;
+	       String tipo, nombre, correo, contraseña;
+	       long valor;
+	       int op=-1, cuotas,pasajeros, calles;
+	       do{
+	          op = Integer.parseInt(JOptionPane.showInputDialog(mensaje.get(0)));
+	          if(mensaje.get(2).equals("pasajero") ){
+	              pasajero = mensaje.get(3);
+	              switch(op){
+	                  case 1:
+	                      break;
+	                  case 2:
+	                      break;
+	                  case 3:
+	                      break;
+	                  case 4:
+	                      break;
+	                  case 5:
+	                      break;
+	                  case 6:
+	                      break; 
+	              }
+	              
+	          }else if(mensaje.get(2).equals("conductor")){
+	              conductor = mensaje.get(3);
+	              switch(op){
+	                  case 1:
+	                      break;
+	                  case 2:
+	                      break;
+	                  case 3:
+	                      break;
+	                  case 4:
+	                      break;
+	              }
+	              
+	          }else if(mensaje.get(2).equals("administrador")){
+	              switch(op){
+	                  case 1:
+	                      break;
+	                  case 2:
+	                      break;
+	                  case 3:
+	                      break;
+	                  case 4:
+	                      break;
+	              }
+	          }
+	          
+	          
+	       }while(op!=0  && ProxyMenu.UnicaInstancia().getFacade().verificarCodigo(mensaje.get(3), Long.parseLong(mensaje.get(1))));
+	   }
+
 	}
 
 
