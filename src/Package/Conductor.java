@@ -9,11 +9,15 @@ public class Conductor extends Usuario {
 	  }
 
 	  @Override
-	  public String adicionar(String nombre, String correo, String contrasena) throws Exception {
+	  public String adicionar(String nombre, String correo, String contrasena,String documento, String genero, String fechaNacimiento, String foto) throws Exception {
 	      if(getNombre()==null && getCorreo()==null && getContrasena()==null){
 	      setNombre(nombre);
 	      setCorreo(correo);
 	      setContrasena(contrasena);
+	      setGenero(genero);
+	      setDocumento(documento);
+	      setFoto(foto);
+	      setFechaNacimiento(fechaNacimiento);
 	      }else{
 	          throw new Exception("Este usuario ya tiene datos registrados");
 	      }
@@ -23,12 +27,16 @@ public class Conductor extends Usuario {
 	  }
 
 	  @Override
-	  public String modificar(String correo, String nombre, String contrasena) throws Exception{
+	  public String modificar(String correo, String nombre, String contrasena,String documento, String genero, String fechaNacimiento, String foto) throws Exception{
 	      
 	      if(!(getNombre()==null && getCorreo()==null && getContrasena()==null)) {
 	      setNombre(nombre);
 	      setCorreo(correo);
 	      setContrasena(contrasena);
+	      setGenero(genero);
+	      setDocumento(documento);
+	      setFoto(foto);
+	      setFechaNacimiento(fechaNacimiento);
 	      }else{
 	          throw new Exception("Este usuario no tiene datos registrados aun, deberias crearlo");
 	      }

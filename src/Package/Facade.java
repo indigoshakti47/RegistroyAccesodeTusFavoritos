@@ -21,7 +21,7 @@ public class Facade {
         validaciones = new ArrayList();
     }
     
-    public Usuario RegistrarUsuario(String tipo, String nombre, String correo, String contrasena) throws Exception{
+    public Usuario RegistrarUsuario(String tipo, String nombre, String correo, String contrasena, String documento, String genero, String fechaNacimiento, String foto) throws Exception{
         Usuario u;
         if(tipo.equals("conductor")){
             u= new Conductor();
@@ -32,7 +32,7 @@ public class Facade {
         }else{
             throw new Exception ("Tipo de usuario no especificado");
         }
-        String r= u.adicionar(nombre, correo, contrasena);
+        String r= u.adicionar(nombre, correo, contrasena,String documento, String genero, String fechaNacimiento, String foto);
         usuarios.putUsuario(u);
         validaciones.add(new ValidacionCorreo(correo));
         return u;

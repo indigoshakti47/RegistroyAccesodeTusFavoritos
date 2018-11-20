@@ -23,5 +23,21 @@ public interface IUsuario {
    public String getContrasena();
 
    public void setContrasena(String contrasena);
+   
+   public String getGenero();
+
+	public void setGenero(String genero);
+
+	public String getFechaNacimiento();
+
+	public void setFechaNacimiento(String fechaNacimiento);
+
+	public String getFoto();
+
+	public void setFoto(String foto);
+
+	public String getDocumento();
+	
+	public void setDocumento(String documento);
 
 }
