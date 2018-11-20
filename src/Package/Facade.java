@@ -1,17 +1,21 @@
 package Package;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 public class Facade {
 	
     private Usuarios usuarios; 
     private ArrayList<Acceso> ingresos;
+    private ArrayList<Multa> multas;
+    private ArrayList<Ruta> rutas;
     
     public Facade(){
         usuarios = new Usuarios();
-       
+        rutas = new ArrayList<Ruta>();
         ingresos = new ArrayList<Acceso>();
-        
+        multas = new ArrayList<Multa>();
     }
     
     public Usuario RegistrarUsuario(String tipo, String nombre, String correo, String contrasena) throws Exception{
@@ -47,6 +51,28 @@ public class Facade {
         }
     }
     
+    public void imponerMulta(Reserva reserva, String denunciante) throws Exception {
+    	String denunciado;
+    	if(denunciante.equals(reserva.getPasajero())) {
+    		denunciado = comprobarRuta(reserva.getRuta()).getConductor();
+    	}else if(comprobarRuta(reserva.getRuta()).getConductor().equals(denunciante)){
+    		denunciado = reserva.getPasajero();
+    	}else {
+    		throw new Exception("denuncia invalida");
+    	}
+    	
+    	
+    	Calendar current = Calendar.getInstance();
+    	Calendar res = reserva.getHora();
+    	if(current.compareTo(res)<= 0) {
+    		multas.add(new Multa(denunciado, reserva.getPrecio()));
+    	}else {
+    		long precio = (long) (reserva.getPrecio() * 1.5); 
+    		multas.add(new Multa(denunciado,precio));
+    	}
+    }
+    
+    
    
     
     //-------------------------------------metodos privados (para el funcionamiento de otros)-------------
@@ -71,6 +97,13 @@ public class Facade {
         }
         
         throw new Exception("no ha iniciado sesion");
+    }
+    
+    private Ruta comprobarRuta(String nombre){
+        for(Ruta c: rutas){
+                if(c.getNombre().equals(nombre))  return c;    
+        }
+        return null;
     }
 
 }
