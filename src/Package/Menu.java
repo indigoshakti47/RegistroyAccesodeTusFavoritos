@@ -58,7 +58,7 @@ public class Menu {
 
 	 private static void mostrarMenu(ArrayList<String> mensaje) throws Exception{
 	       String hora,ruta, pasajero, bruta, banco, tipocuenta, cuenta,conductor, tarjeta, codigo,salida;
-	       String tipo, nombre, correo, contraseña;
+	       String tipo, nombre, correo, contrasena;
 	       long valor;
 	       int op=-1, cuotas,pasajeros, calles;
 	       do{

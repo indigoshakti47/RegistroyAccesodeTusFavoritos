@@ -1,5 +1,7 @@
 package Package;
 
+
+
 public class Conductor extends Usuario {
 	
 	public Conductor() {

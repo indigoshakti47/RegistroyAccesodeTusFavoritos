@@ -1,8 +1,11 @@
 package Package;
 
+
 public abstract class Usuario implements IUsuario {
 	
 	  protected String nombre;
+	  
+	  
 	  protected String correo;
 	  protected String contrasena;
 
