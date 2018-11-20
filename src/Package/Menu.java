@@ -104,7 +104,9 @@ public class Menu {
 	                  case 4:
 	                      break;
 	              }
-	          }
+	          }else if(mensaje.get(2).equals("nuevo")) {
+            	  
+              }
 	          
 	          
 	       }while(op!=0  && ProxyMenu.UnicaInstancia().getFacade().verificarCodigo(mensaje.get(3), Long.parseLong(mensaje.get(1))));

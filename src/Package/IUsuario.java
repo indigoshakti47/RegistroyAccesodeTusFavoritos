@@ -8,6 +8,10 @@ public interface IUsuario {
 
     public String consultar() throws Exception;
     
+    public boolean isValido();
+    
+    public void setValido(boolean valido);
+    
     public String getNombre() ;
 
    public void setNombre(String nombre);

@@ -4,10 +4,9 @@ package Package;
 public abstract class Usuario implements IUsuario {
 	
 	  protected String nombre;
-	  
-	  
 	  protected String correo;
 	  protected String contrasena;
+	  protected boolean valido;
 
 	  abstract public String adicionar(String nombre, String correo, String contrasena) throws Exception;
 
@@ -20,7 +19,18 @@ public abstract class Usuario implements IUsuario {
 
 
 	  public Usuario() {
-		super();
+		  super();
+		valido=false;
+	}
+
+	  
+	  
+	public boolean isValido() {
+		return valido;
+	}
+
+	public void setValido(boolean valido) {
+		this.valido = valido;
 	}
 
 	public String getNombre() {

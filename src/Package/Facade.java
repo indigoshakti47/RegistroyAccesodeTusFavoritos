@@ -3,6 +3,7 @@ package Package;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Iterator;
 
 public class Facade {
 	
@@ -10,12 +11,14 @@ public class Facade {
     private ArrayList<Acceso> ingresos;
     private ArrayList<Multa> multas;
     private ArrayList<Ruta> rutas;
+    private ArrayList<ValidacionCorreo> validaciones;
     
     public Facade(){
         usuarios = new Usuarios();
         rutas = new ArrayList<Ruta>();
         ingresos = new ArrayList<Acceso>();
         multas = new ArrayList<Multa>();
+        validaciones = new ArrayList();
     }
     
     public Usuario RegistrarUsuario(String tipo, String nombre, String correo, String contrasena) throws Exception{
@@ -31,7 +34,25 @@ public class Facade {
         }
         String r= u.adicionar(nombre, correo, contrasena);
         usuarios.putUsuario(u);
+        validaciones.add(new ValidacionCorreo(correo));
         return u;
+    }
+    
+    public boolean validarCorreo(String correo, int codigo) throws Exception {
+    	Iterator<ValidacionCorreo>iv = validaciones.iterator();
+    	ValidacionCorreo v;
+    	boolean validar;
+    	while(iv.hasNext()) {
+    		v = iv.next();
+    		if(v.getCorreo().equals(correo)) {
+    			validar = v.validar(codigo);
+    			this.buscarUsuario(correo).setValido(validar);
+    			return validar;
+    			
+    		}
+    	}
+    	
+    	return false;
     }
     
     public void eliminarUsuario(String correo){

@@ -28,36 +28,42 @@ public class ProxyMenu implements Imenu{
         IUsuario usuario = facade.acceder(correo, contrasena, id);
         String menu, tipoUsuario;
         
-        
-        if(usuario instanceof Pasajero){
-            menu = "elija una opcion: \n"
-                    + "1) CREAR UNA RESERVA \n"
-                    + "2) LISTAR MIS RESERVAS \n"
-                    + "3) MODIFICAR RESERVA\n"
-                    + "4) ELIMINAR UNA RESERVA \n"
-                    + "5) REALIZAR PAGO CON CUENTA DEBITO \n"
-                    + "6) REALIZAR PAGO CON CREDITO \n"                    
-                    + "0) SALIR";
-            tipoUsuario = "pasajero";
-           
-        }else if(usuario instanceof Conductor){
-            menu = "elige una opcion\n"
-                    + "1) CREAR RUTA\n"
-                    + "2) LISTA DE MIS RUTAS  \n"
-                    + "3) ACTUALIZAR DATOS DE UNA RUTA \n"
-                    + "4) ELIMINAR UNA RUTA \n"
-                    + "0) SALIR";
-            tipoUsuario = "conductor";
-        }else if(usuario instanceof AdministradorAdapter){
-            menu = "elige una opcion\n"
-                    + "1) REGISTRAR UN USUARIO\n"
-                    + "2) LISTAR RUTAS POR CONDUCTOR\n"
-                    + "3) LISTAR RESERVAS POR PASAJERO\n"
-                    + "4) ELIMINAR UN USUARIO\n";
-            tipoUsuario = "administrador";
-        }else{
-            throw new Exception("error en el ingreso");
+        if(usuario.isValido()) {
+        	if(usuario instanceof Pasajero){
+                menu = "elija una opcion: \n"
+                        + "1) CREAR UNA RESERVA \n"
+                        + "2) LISTAR MIS RESERVAS \n"
+                        + "3) MODIFICAR RESERVA\n"
+                        + "4) ELIMINAR UNA RESERVA \n"
+                        + "5) REALIZAR PAGO CON CUENTA DEBITO \n"
+                        + "6) REALIZAR PAGO CON CREDITO \n"                    
+                        + "0) SALIR";
+                tipoUsuario = "pasajero";
+               
+            }else if(usuario instanceof Conductor){
+                menu = "elige una opcion\n"
+                        + "1) CREAR RUTA\n"
+                        + "2) LISTA DE MIS RUTAS  \n"
+                        + "3) ACTUALIZAR DATOS DE UNA RUTA \n"
+                        + "4) ELIMINAR UNA RUTA \n"
+                        + "0) SALIR";
+                tipoUsuario = "conductor";
+            }else if(usuario instanceof AdministradorAdapter){
+                menu = "elige una opcion\n"
+                        + "1) REGISTRAR UN USUARIO\n"
+                        + "2) LISTAR RUTAS POR CONDUCTOR\n"
+                        + "3) LISTAR RESERVAS POR PASAJERO\n"
+                        + "4) ELIMINAR UN USUARIO\n";
+                tipoUsuario = "administrador";
+            }else{
+                throw new Exception("error en el ingreso");
+            }
+        }else {
+        	menu = "ingrese el codigo de validación enviado a su correo";
+        	tipoUsuario = "nuevo";
         }
+        
+        
         ArrayList<String> datos =  new ArrayList();
         datos.add(menu); 
         datos.add(new Long(id).toString()); 
@@ -92,6 +98,7 @@ public class ProxyMenu implements Imenu{
             return true;
         }
     }
+    
     public void eliminar (String key){
         usuarios.remove(key);
     }
