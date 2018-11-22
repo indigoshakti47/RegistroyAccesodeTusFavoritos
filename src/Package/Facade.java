@@ -99,7 +99,7 @@ public class Facade {
     //-------------------------------------metodos privados (para el funcionamiento de otros)-------------
     
     
-      private Usuario buscarUsuario(String correo) throws Exception{
+      public Usuario buscarUsuario(String correo) throws Exception{
         IUsuario u = usuarios.getUsuario(correo);
         if(u == null){
             throw new Exception("Usuario no encontrado");
@@ -126,5 +126,11 @@ public class Facade {
         }
         return null;
     }
+
+	public ArrayList<ValidacionCorreo> getValidaciones() {
+		return validaciones;
+	}
+    
+    
 
 }
