@@ -9,6 +9,8 @@ public class Menu {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		// OTIS AYUDAME
+		
 		 int pasajeros, op = -1;
 	        String nombre, correo, contrasena, tipo, salida, hora, conductor, pasajero;
 	        long valor; 
