@@ -12,7 +12,7 @@ public class Menu {
 		// OTIS AYUDAME
 		
 		 int pasajeros, op = -1;
-	        String nombre, correo, contrasena, tipo, salida, hora, conductor, pasajero;
+	        String nombre, correo, contrasena, tipo, salida, hora, conductor, pasajero, documento, genero, fechaNacimiento, foto;
 	        long valor; 
 	        ArrayList<String> datos;
 	        do {
@@ -35,7 +35,11 @@ public class Menu {
 	                            case 3: tipo = "conductor"; break;
 	                            default: tipo = null; break;
 	                        }
-	                        ProxyMenu.UnicaInstancia().registrarUsuario(tipo, nombre, correo, contrasena);
+	                        documento = JOptionPane.showInputDialog("escriba su documento de identificacion");
+	                        genero = JOptionPane.showInputDialog("indique su genero :M- Masculino, F- Femenino"); // y a la verga todo, el que noseidentifique que se joda
+	                        fechaNacimiento = JOptionPane.showInputDialog("indique su fecha de nacimiento en formato dd/mm/aaaa");
+	                        foto = JOptionPane.showInputDialog("ingrese una foto");
+	                        ProxyMenu.UnicaInstancia().registrarUsuario(tipo, nombre, correo, contrasena, documento, genero, fechaNacimiento, foto);
 	                        break;
 	                    case 2:
 	                        correo= JOptionPane.showInputDialog("ingrese su correo");
