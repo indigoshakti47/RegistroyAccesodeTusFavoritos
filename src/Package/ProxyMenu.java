@@ -75,9 +75,9 @@ public class ProxyMenu implements Imenu{
     
 
     @Override
-    public void registrarUsuario(String tipoUsuario, String nombre, String correo, String contrasena) throws Exception {
+    public void registrarUsuario(String tipoUsuario, String nombre, String correo, String contrasena, String documento, String genero, String fechaNacimiento, String foto) throws Exception {
         if(usuarios.get(correo)== null){
-            usuarios.put(correo, facade.RegistrarUsuario(tipoUsuario, nombre, correo, contrasena));
+            usuarios.put(correo, facade.RegistrarUsuario(tipoUsuario, nombre, correo, contrasena,documento, genero, fechaNacimiento, foto));
         }else{
             throw new Exception ("este usuario ya se encuentra registrado");
         }
