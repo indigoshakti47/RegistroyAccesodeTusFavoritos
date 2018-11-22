@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="Package.Conductor" project="Registro" file="/Registro/src/Package/Conductor.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="323" x="225" y="1050"/>    
+    <position height="-1" width="-1" x="2206" y="2676"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="Package.Usuarios" project="Registro" file="/Registro/src/Package/Usuarios.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="171" width="242" x="1356" y="1050"/>    
+    <position height="-1" width="-1" x="2826" y="1378"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <interface id="3" language="java" name="Package.IUsuario" project="Registro" 
     file="/Registro/src/Package/IUsuario.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="405" width="199" x="1316" y="1477"/>    
+    <position height="-1" width="-1" x="2124" y="1370"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </interface>  
   <class id="4" language="java" name="Package.Ruta" project="Registro" file="/Registro/src/Package/Ruta.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="387" width="255" x="1638" y="1050"/>    
+    <position height="-1" width="-1" x="3325" y="1583"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="Package.Multa" project="Registro" file="/Registro/src/Package/Multa.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="189" width="137" x="1933" y="1050"/>    
+    <position height="-1" width="-1" x="3947" y="1537"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,7 +48,7 @@
   </class>  
   <class id="6" language="java" name="Package.Administrador" project="Registro" 
     file="/Registro/src/Package/Administrador.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="315" width="156" x="588" y="1477"/>    
+    <position height="-1" width="-1" x="1359" y="2573"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,7 +57,7 @@
   </class>  
   <class id="7" language="java" name="Package.ProxyMenu" project="Registro" file="/Registro/src/Package/ProxyMenu.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="243" width="256" x="1316" y="106"/>    
+    <position height="-1" width="-1" x="1757" y="781"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -66,7 +66,7 @@
   </class>  
   <class id="8" language="java" name="Package.Usuario" project="Registro" file="/Registro/src/Package/Usuario.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="567" width="333" x="666" y="443"/>    
+    <position height="-1" width="-1" x="2114" y="1940"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -75,7 +75,7 @@
   </class>  
   <class id="9" language="java" name="Package.Acceso" project="Registro" file="/Registro/src/Package/Acceso.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="189" width="123" x="2110" y="1050"/>    
+    <position height="-1" width="-1" x="4264" y="1156"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -84,7 +84,7 @@
   </class>  
   <class id="10" language="java" name="Package.Facade" project="Registro" file="/Registro/src/Package/Facade.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="225" width="400" x="1771" y="443"/>    
+    <position height="-1" width="-1" x="3304" y="774"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -93,7 +93,7 @@
   </class>  
   <class id="11" language="java" name="Package.Reserva" project="Registro" file="/Registro/src/Package/Reserva.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="297" width="180" x="433" y="106"/>    
+    <position height="-1" width="-1" x="4649" y="1019"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -102,7 +102,7 @@
   </class>  
   <class id="12" language="java" name="Package.Menu" project="Registro" file="/Registro/src/Package/Menu.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1976" y="216"/>    
+    <position height="-1" width="-1" x="2668" y="255"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -111,7 +111,7 @@
   </class>  
   <class id="13" language="java" name="Package.AdministradorAdapter" project="Registro" 
     file="/Registro/src/Package/AdministradorAdapter.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="323" x="588" y="1050"/>    
+    <position height="-1" width="-1" x="1295" y="2029"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -120,7 +120,7 @@
   </class>  
   <interface id="14" language="java" name="Package.Imenu" project="Registro" file="/Registro/src/Package/Imenu.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="877" y="178"/>    
+    <position height="-1" width="-1" x="1749" y="244"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -129,7 +129,7 @@
   </interface>  
   <class id="15" language="java" name="Package.Pasajero" project="Registro" file="/Registro/src/Package/Pasajero.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="323" x="951" y="1050"/>    
+    <position height="-1" width="-1" x="2765" y="2169"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -138,7 +138,7 @@
   </class>  
   <class id="16" language="java" name="Package.ValidacionCorreo" project="Registro" 
     file="/Registro/src/Package/ValidacionCorreo.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="279" width="145" x="2273" y="1050"/>    
+    <position height="-1" width="-1" x="4218" y="608"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -147,7 +147,7 @@
   </class>  
   <interface id="17" language="java" name="Package.Componente" project="Registro" 
     file="/Registro/src/Package/Componente.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="130" x="1638" y="1477"/>    
+    <position height="-1" width="-1" x="3327" y="1993"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -183,7 +183,6 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <realization id="28">    
-    <bendpoint x="1304" y="1050"/>    
     <end type="SOURCE" refId="8"/>    
     <end type="TARGET" refId="3"/>  
   </realization>  
@@ -216,8 +215,6 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="39">    
-    <bendpoint x="1325" y="443"/>    
-    <bendpoint x="1325" y="1050"/>    
     <end type="SOURCE" refId="7" navigable="false">      
       <attribute id="40" name="usuarios"/>      
       <multiplicity id="41" minimum="0" maximum="2147483647"/>    
