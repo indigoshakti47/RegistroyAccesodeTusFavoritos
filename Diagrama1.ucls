@@ -120,7 +120,7 @@
   </class>  
   <interface id="14" language="java" name="Package.Imenu" project="Registro" file="/Registro/src/Package/Imenu.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="256" x="1039" y="443"/>    
+    <position height="-1" width="-1" x="877" y="178"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
