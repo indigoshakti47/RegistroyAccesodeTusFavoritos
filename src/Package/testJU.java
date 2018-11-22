@@ -1,14 +1,11 @@
 package Package;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+import static org.junit.Assert.*;
 import java.util.ArrayList;
-
-import org.junit.jupiter.api.Test;
 
 class testJU {
 
-	@Test
+	@org.junit.Test
 	void testRegistro() {
 		try {
 			ProxyMenu.UnicaInstancia().registrarUsuario("pasajero", "Danny Barriga", "carlosbarba@unisabana.edu.co", "1234", "4321", "m", "4/4/98", "");
@@ -21,7 +18,7 @@ class testJU {
 		}
 	}
 	
-	@Test
+	@org.junit.Test
 	void  testVerificacion() {
 		try {
 			ProxyMenu.UnicaInstancia().registrarUsuario("pasajero", "Danny Barriga", "carlosbarba@unisabana.edu.co", "1234", "4321", "m", "4/4/98", "");
@@ -34,7 +31,7 @@ class testJU {
 		}
 	}
 	
-	@Test
+	@org.junit.Test
 	void testIniciarSesion() {
 		try {
 			ProxyMenu.UnicaInstancia().registrarUsuario("pasajero", "Danny Barriga", "carlosbarba@unisabana.edu.co", "1234", "4321", "m", "4/4/98", "");
@@ -46,7 +43,7 @@ class testJU {
 		}
 	}
 	
-	@Test
+	@org.junit.Test
 	void testEliminar() {
 			boolean existe = false, noExiste = false;
 		try {
