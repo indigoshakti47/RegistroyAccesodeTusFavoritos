@@ -30,8 +30,8 @@ public class ValidacionCorreo {
         String dominio= "@unisabana.edu.co";
         String para = correo;
         String de = "carpoolingsabana@gmail.co";
-        String asunto = "Activación cuenta Carwheels sabana.";
-        String mensaje = "Su código de activación es: " + codActivacion + "\nrecuerde que este código vence en en 24 horas";
+        String asunto = "Activaciï¿½n cuenta Carwheels sabana.";
+        String mensaje = "Su codigo de activacion es: " + codActivacion + "\nrecuerde que este codigo vence en 24 horas";
         boolean sessionDebug = false;
         
         if (para.contains(dominio)){

@@ -32,7 +32,7 @@ public class Facade {
         }else{
             throw new Exception ("Tipo de usuario no especificado");
         }
-        String r= u.adicionar(nombre, correo, contrasena,String documento, String genero, String fechaNacimiento, String foto);
+        String r= u.adicionar(nombre, correo, contrasena,documento, genero, fechaNacimiento, foto);
         usuarios.putUsuario(u);
         validaciones.add(new ValidacionCorreo(correo));
         return u;

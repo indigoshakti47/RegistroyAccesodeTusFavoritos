@@ -8,10 +8,7 @@ package Package;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- *
- * @author Vanessa
- */
+
 public class Reserva {
     private String pasajero;
     private String ruta;

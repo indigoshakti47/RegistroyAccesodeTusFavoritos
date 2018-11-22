@@ -8,10 +8,7 @@ package Package;
 import java.sql.Time;
 import java.util.ArrayList;
 
-/**
- *
- * @author Vanessa
- */
+
 public final class Ruta implements Componente{
     private String nombre;
     private ArrayList<Componente> componentes;

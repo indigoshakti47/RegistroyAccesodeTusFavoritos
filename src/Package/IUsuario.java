@@ -2,9 +2,9 @@ package Package;
 
 public interface IUsuario {
 	
-	public String adicionar(String nombre, String correo, String contrasena) throws Exception ;
+	public String adicionar(String nombre, String correo, String contrasena,  String documento, String genero, String fechaNacimiento, String foto) throws Exception ;
 
-    public String modificar(String correo, String nombre, String contrasena) throws Exception;
+    public String modificar(String correo, String nombre, String contrasena,  String documento, String genero, String fechaNacimiento, String foto) throws Exception;
 
     public String consultar() throws Exception;
     
